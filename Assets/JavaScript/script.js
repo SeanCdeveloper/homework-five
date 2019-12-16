@@ -8,18 +8,18 @@ $(document).ready(function() {
     });
     /* Pasting the Current Date + Time to <p> Element */
     $("#currentDay").text(moment().format("LLLL"));    
-
-    var timeNow = moment().format("hh:mm:ss A");
-    var timeBlock0 = $("#timeBlock1");
-    var timeBlock1 = $("#timeBlock2");
-    var timeBlock2 = $("#timeBlock3");
+    
+    var timeBlock0 = $("#timeBlock0");
+    var timeBlock1 = $("#timeBlock1");
+    var timeBlock2 = $("#timeBlock2");
     var timeBlock3 = $("#timeBlock3");
-    var timeBlock4 = $("#timeBlock3");
-    var timeBlock5 = $("#timeBlock3");
-    var timeBlock6 = $("#timeBlock3");
-    var timeBlock7 = $("#timeBlock3");
+    var timeBlock4 = $("#timeBlock4");
+    var timeBlock5 = $("#timeBlock5");
+    var timeBlock6 = $("#timeBlock6");
+    var timeBlock7 = $("#timeBlock7");
     var timeBlock8 = $("#timeBlock8");
 
+    var timeNow = moment().format("hh:mm:ss A");  
     console.log(timeNow);
 
     if (timeNow >= "09:00:00 AM" && timeNow < "9:59:59 AM") {
@@ -38,10 +38,14 @@ $(document).ready(function() {
         console.log("Not");
     } else if (timeNow >= "04:00:00 PM" && timeNow < "04:59:59 PM") {
         console.log("Being");
-    } else if (timeNow >= "5:00:00 PM" && timeNow < "05:59:59 PM") {
+    } else if (timeNow >= "05:00:00 PM" && timeNow < "05:00:59 PM") {
         console.log("Bored");
+    } else {
+        console.log("Nothing");
     }
-    
+});
+
+
 /*
 var timeBlock1 = $("#timeBlock1");
 var timeBlock2 = $("#timeBlock2");
@@ -50,18 +54,14 @@ console.log(timeBlock1, timeBlock2, timeBlock3);
 
 var timeNow = moment().format("hh:mm:ss A");
 console.log(timeNow);
-if (timeNow >= "02:54:00" && timeNow < "02:54:59") {
+if (timeNow >= "06:05:00" && timeNow < "06:05:59") {
         console.log("Chill");
         timeBlock1.css("background", "red")
-    } else if (timeNow >= "02:55:00" && timeNow < "02:55:59") {
+    } else if (timeNow >= "06:06:00" && timeNow < "06:06:59") {
         console.log("Time");
         timeBlock2.css("background", "green");
-    } else if (timeNow >= "02:56:00" && timeNow < "02:56:59") {
+    } else if (timeNow >= "06:07:00" && timeNow < "06:07:59") {
         console.log("Now");
         timeBlock3.css("background", "orange");
     }
 */
-
-
-
-});
