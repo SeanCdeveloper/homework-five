@@ -38,7 +38,7 @@ $(document).ready(function() {
         console.log("Not");
     } else if (timeNow >= "04:00:00 PM" && timeNow < "04:59:59 PM") {
         console.log("Being");
-    } else if (timeNow >= "05:00:00 PM" && timeNow < "05:00:59 PM") {
+    } else if (timeNow >= "05:00:00 PM" && timeNow < "05:59:59 PM") {
         console.log("Bored");
     } else {
         console.log("Nothing");
