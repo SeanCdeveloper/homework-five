@@ -19,6 +19,7 @@ $(document).ready(function() {
     var timeBlock7 = $("#timeBlock7");
     var timeBlock8 = $("#timeBlock8");
 
+    /*
     var timeNow = moment().format("hh:mm:ss A");  
     console.log(timeNow);
 
@@ -44,24 +45,33 @@ $(document).ready(function() {
         console.log("Nothing");
     }
 });
+*/
 
-
-/*
+var timeBlock0 = $("#timeBlock0");
 var timeBlock1 = $("#timeBlock1");
 var timeBlock2 = $("#timeBlock2");
-var timeBlock3 = $("#timeBlock3");
-console.log(timeBlock1, timeBlock2, timeBlock3);
+console.log(timeBlock0, timeBlock1, timeBlock2);
 
+
+var Timer = setInterval(myTimer, 1000);
+
+function myTimer() {
 var timeNow = moment().format("hh:mm:ss A");
 console.log(timeNow);
-if (timeNow >= "06:05:00" && timeNow < "06:05:59") {
+if (timeNow >= "08:17:00" && timeNow < "08:17:59") {
         console.log("Chill");
-        timeBlock1.css("background", "red")
-    } else if (timeNow >= "06:06:00" && timeNow < "06:06:59") {
+        timeBlock0.addClass("present");
+    } else if (timeNow >= "08:18:00" && timeNow < "08:18:59") {
         console.log("Time");
-        timeBlock2.css("background", "green");
-    } else if (timeNow >= "06:07:00" && timeNow < "06:07:59") {
+        timeBlock0.removeClass("present");
+        timeBlock0.addClass("past");
+        timeBlock1.addClass("present");
+    } else if (timeNow >= "08:19:00" && timeNow < "08:19:59") {
         console.log("Now");
-        timeBlock3.css("background", "orange");
+        timeBlock1.removeClass("present");
+        timeBlock1.addClass("past");
+        timeBlock2.addClass("present");
     }
-*/
+};
+});
+
