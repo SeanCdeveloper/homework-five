@@ -194,14 +194,32 @@ $(document).ready(function () {
     }
 });
 
-var time1 = localStorage.getItem("hour-9");
-$("#timeBlock0").text(time1);
+var time0 = localStorage.getItem("hour-9");
+$("#timeBlock0").text(time0);
 
-var time2 = localStorage.getItem("hour-10");
-$("#timeBlock1").text(time2);
+var time1 = localStorage.getItem("hour-10");
+$("#timeBlock1").text(time1);
 
+var time2 = localStorage.getItem("hour-11");
+$("#timeBlock2").text(time2);
 
+var time3 = localStorage.getItem("hour-12");
+$("#timeBlock3").text(time3);
 
+var time4 = localStorage.getItem("hour-13");
+$("#timeBlock4").text(time4);
+
+var time5 = localStorage.getItem("hour-14");
+$("#timeBlock5").text(time5);
+
+var time6 = localStorage.getItem("hour-15");
+$("#timeBlock6").text(time6);
+
+var time7 = localStorage.getItem("hour-16");
+$("#timeBlock7").text(time7);
+
+var time8 = localStorage.getItem("hour-17");
+$("#timeBlock8").text(time8);
 
 
 
