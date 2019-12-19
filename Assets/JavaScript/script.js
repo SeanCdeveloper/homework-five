@@ -10,50 +10,6 @@ $(document).ready(function () {
     /* Pasting the Current Date + Time to <p> Element */
     $("#currentDay").text(moment().format("LLLL"));
 
-    /*
-    var timeBlock0 = $("#timeBlock0");
-    var timeBlock1 = $("#timeBlock1");
-    var timeBlock2 = $("#timeBlock2");
-    var timeBlock3 = $("#timeBlock3");
-    var timeBlock4 = $("#timeBlock4");
-    var timeBlock5 = $("#timeBlock5");
-    var timeBlock6 = $("#timeBlock6");
-    var timeBlock7 = $("#timeBlock7");
-    var timeBlock8 = $("#timeBlock8");
-
-    console.log(timeBlock0, timeBlock1, timeBlock2, timeBlock3, timeBlock4, timeBlock5, timeBlock6, timeBlock7, timeBlock8);
-
-    var Timer = setInterval(myTimer, 1000);
-
-    var mapper = {
-        "9": timeBlock0,
-        "10": timeBlock1,
-        "11": timeBlock2,
-        "12": timeBlock3,
-        "1": timeBlock4,
-        "2": timeBlock5,
-        "3": timeBlock6,
-        "4": timeBlock7,
-        "5": timeBlock8
-    }
-
-    // compare timeStrings in moment.js 
-    var setTimeClass = (currentTime, minTime, maxTime, selector) => {
-        if(currentTime > maxTime){
-            mapper[selector].addClass("past"); 
-        }  
-    }
-    function myTimer() {
-        var timeNow = moment().format("hh:mm:ss A");
-        console.log(timeNow);
-        debugger
-
-        setTimeClass(timeNow, "09:00:00", "09:59:59", "nine");
-          function stopTimer() {
-            clearInterval(Timer);
-        }
-*/
-
     var timeBlock0 = $("#timeBlock0");
     var timeBlock1 = $("#timeBlock1");
     var timeBlock2 = $("#timeBlock2");

@@ -50,6 +50,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 Title: Work-Day Schedule
 
-I have tested this throughout the course of eight hours multiple times.  Sure, I could have moved the moment.js time back or forward, but I wanted to test it exactly as it is meant to be used.  The hours moved approriately, and refreshing the page has continually placed the correct hour shaded in green.   
+I have tested this throughout the course of eight hours multiple times.  I could have moved the moment.js time back or forward, but I wanted to test it exactly as it is meant to be used.  The hours moved approriately, and refreshing the page has continually placed the correct hour shaded in green.   
 
-This Work-Day Schecule does not require any special conditions to run, but running tests on it through multiple days assures me that this Application has the ability to work under multiple conditions.  
+This Work-Day Schecule does not require any special conditions to run, but running tests on it through multiple days assures me that this Application has the ability to work under multiple conditions. 
+
